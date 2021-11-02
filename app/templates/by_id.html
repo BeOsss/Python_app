@@ -1,17 +1,14 @@
-{% extends "main.html"%}
+{% extends 'main.html'%}
 
 {%block header%}
-<title>Trang chủ</title>
+<title>{{product.name}}</title>
 {% endblock %}
 
-
 {% block body%}
-{% for product in products %}
 <div class="products">
     <div class="product-img "><img src="{{ product.image }}" alt=""></div>
-    <div class="product-name"><a href="/products/id={{product.id}}">{{ product.name }}</a></div>
+    <div class="product-name">{{ product.name }}</div>
     <div class="product-description">{{ product.description }}</div>
     <div class="product-price clearfix">{{ product.price }}</div>
 </div>
-{% endfor %}
 {% endblock %}

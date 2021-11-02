@@ -9,7 +9,9 @@ body {
 }
 
 .container {
+  width: 90%;
   padding: 1rem 1rem 0;
+  margin: 0 auto;
 }
 
 .container .title {
@@ -32,5 +34,36 @@ body {
 
 .container .nav-bar .nav-item a {
   text-decoration: none;
+}
+
+.container .products {
+  width: 100%;
+  margin-top: 1rem;
+  border: 1px solid;
+}
+
+.container .products .product-img {
+  width: 25%;
+  float: left;
+}
+
+.container .products .product-img img {
+  height: 10em;
+}
+
+.container .products .product-name {
+  width: 15%;
+  float: left;
+}
+
+.container .products .product-description {
+  width: 40%;
+  float: left;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 /*# sourceMappingURL=style.css.map */
